@@ -524,12 +524,14 @@ a:focus {
 }
 
 .about .about-content {
-    padding: 0 60px;
+    padding: 150px 60px 10px 60px;
 }
 
-.about .about-text p {
+.about .about-text {
     font-size: 16px;
-    color: rgb(202, 200, 200);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 30px;
 }
 
 .about .skills {
@@ -592,7 +594,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #48cae4;
+    background: #000000;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -624,7 +626,7 @@ a:focus {
     top: 48px;
     right: -8px;
     background: #ffffff;
-    border: 2px solid #48cae4;
+    border: 2px solid #000000;
     border-radius: 16px;
     z-index: 1;
 }
@@ -656,7 +658,7 @@ a:focus {
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #48cae4;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
