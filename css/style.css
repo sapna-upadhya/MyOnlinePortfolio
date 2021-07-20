@@ -60,6 +60,16 @@ a:focus {
     border-color: #6d6875;
 }
 
+#parallax_mouse_move{
+  
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #loader {
     position: fixed;
     top: 0;
