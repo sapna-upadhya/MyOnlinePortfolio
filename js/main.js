@@ -104,6 +104,35 @@
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    // Parallax Mouse Move    
+    var rect = $('#parallax_mouse_move')[0].getBoundingClientRect();
+    var mouse = {x: 0, y: 0, moved: false};
+
+    $("#parallax_mouse_move").mousemove(function(e) {
+    mouse.moved = true;
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+    });
+    
+    // Ticker event will be called on every frame
+    TweenLite.ticker.addEventListener('tick', function(){
+    if (mouse.moved){    
+        parallaxIt("img", -20);
+    }
+    mouse.moved = false;
+    });
+
+    function parallaxIt(target, movement) {
+    TweenMax.to(target, 0.5, {
+        x: (mouse.x - rect.width / 2) / rect.width * movement,
+        y: (mouse.y - rect.height / 2) / rect.height * movement
+    });
+    }
+
+    $(window).on('resize scroll', function(){
+    rect = $('#parallax_mouse_move')[0].getBoundingClientRect();
+    })
     
 })(jQuery);
 
