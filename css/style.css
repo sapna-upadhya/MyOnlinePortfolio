@@ -2,8 +2,8 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #797979;
-    background: linear-gradient(rgba(255, 180, 162, 0.95), rgba(255, 180, 162, 0.95));
+    color: white;
+    background: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,6 +14,10 @@ h4,
 h5, 
 h6 {
     color: #414141;
+}
+
+li{
+    color: black;
 }
 
 a {
@@ -61,7 +65,7 @@ a:focus {
 }
 
 #parallax_mouse_move{
-  
+  padding-top: 100px;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -147,24 +151,28 @@ a:focus {
     position: relative;
     transition: .5s;
     z-index: 999;
+    background: white;
 }
 
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    background: white;
 }
 
 .navbar .navbar-brand {
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     font-size: 45px;
     line-height: 0px;
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-    
 }
+
+.navbar .navbar-brand:hover{
+    color: #ff477e;
+   }
 
 .navbar .navbar-brand img {
     max-width: 100%;
@@ -175,7 +183,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 @media (min-width: 992px) {
@@ -183,102 +191,107 @@ a:focus {
         position: absolute;
         width: 100%;
         padding: 30px 60px;
-        background: transparent !important;
+        background: white;
         border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
     }
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #000000d5 !important;
+        background: white;
     }
     
     .navbar .navbar-brand {
-      color: #000000c5;
+      color: black;
+    }
+
+    
+    .navbar .navbar-brand:hover{
+     color: #ff477e;
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #ffffff;
+        color: black;
     }
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: black;
         font-size: 18px;
         font-weight: 500;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #ffffff;
+        color: #000000;
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #797777;
+        color: #ff477e;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #797777;
+        color: #ff477e;
     }
 
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #797777;
+        color: #ff477e;
         font-size: 18px;
         font-weight: 500;
     }
     
     .navbar-dark.nav-sticky .navbar-nav .nav-link,
     .navbar-dark.nav-sticky .navbar-nav .nav-link:focus {
-        color: #797777;
+        color: #ff477e;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover,
     .navbar-dark .navbar-nav .nav-link.active {
-        color: #000000;
+        color: #ff477e        ;
     }
     
     .navbar-dark.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-dark.nav-sticky .navbar-nav .nav-link.active {
-        color: #ffffff;
+        color: #000000;
     }
 
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #808080;
+        color: #000000;
         font-size: 18px;
         font-weight: 500;
     }
     
     .navbar-dark.nav-sticky .navbar-nav .nav-link,
     .navbar-dark.nav-sticky .navbar-nav .nav-link:focus {
-        color: #808080;
+        color: #000000;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover,
     .navbar-dark .navbar-nav .nav-link.active {
-        color: #000000;
+        color: #ff477e        ;
     }
     
     .navbar-dark.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-dark.nav-sticky .navbar-nav .nav-link.active {
-        color: #ffffff;
+        color: #ff477e        ;
     }
 }
 
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #000000d7 !important;
+        background: white;
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        color:#000000;
     }
     
     .navbar .navbar-nav {
@@ -304,7 +317,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 180, 162, 0.95), rgba(255, 180, 162, 0.95));
+    background: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,26 +346,40 @@ a:focus {
 
 .hero .hero-content {
     position: relative;
-    padding-left: 75px;
     display: flex;
+    padding: 75px;
+    padding-left: 175px;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
 
+
 .hero .hero-text p {
     color: #000000;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .hero .hero-text h1 {
     color: #000000;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 15px;
+}
+
+.hero .hero-text h1:hover{
+    color: #ff477e;
+}
+
+.hero .hero-text P:hover{
+    color: #ff477e;
+}
+
+.hero .hero-text H2:hover{
+    color: #ff477e;
 }
 
 .hero .hero-text h2 {
@@ -375,22 +402,24 @@ a:focus {
 }
 
 .hero .hero-btn .btn {
+    width: 150px;
     border-radius: 5px;
     margin-top: 35px;
-    color: #000000;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+    color: white;
+    background: black;
+    box-shadow: inset 0 0 0 50px black;
 }
 
+
 .hero .hero-btn .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+    color: white;
+    background: #ff477e;
+    box-shadow: inset 0 0 0 0 #ff477e;
+    border-color: #ff477e;
 }
 
 .hero .hero-btn .btn:first-child {
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 
@@ -400,7 +429,7 @@ a:focus {
     }
     
     .hero .hero-content {
-        padding: 0 15px;
+        padding: 75px;
     }
     
     .hero .hero-text p {
@@ -472,6 +501,11 @@ a:focus {
         padding: 8px 10px;
         letter-spacing: 0;
     }
+
+    
+    .hero .hero-btn .btn:first-child {
+        margin-right: 0px;
+    }
 }
 
 
@@ -496,7 +530,7 @@ a:focus {
     border-radius: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #6d6875;
+    background: #000000;
 }
 
 .section-header p::before {
@@ -523,11 +557,18 @@ a:focus {
 
 .section-header h2 {
     margin: 0;
-    color: #6d6875;
+    color: #000000;
     position: relative;
     font-size: 45px;
     font-weight: 700;
 }
+
+.section-header h2:hover {
+
+    color: #ff477e;
+}
+
+
 
 @media (max-width: 767.98px) {
     .section-header h2 {
@@ -566,16 +607,16 @@ a:focus {
 }
 
 .about .about-content {
-    padding: 150px 60px 10px 60px;
+    padding: 50px 60px 10px 60px;
 }
 
 .about .about-text {
     font-size: 16px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.705);
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
-    width:60%;
+    width:100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -739,8 +780,9 @@ a:focus {
 
 .experience .timeline .timeline-text h2 {
     margin: 0 0 5px 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
+    color: black;
 }
 
 .experience .timeline .timeline-text h4 {
@@ -748,11 +790,26 @@ a:focus {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+    color: black;
+}
+
+.experience .timeline .timeline-text h5 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
 }
 
 .experience .timeline .timeline-text p {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
+    color: black;
+}
+
+.experience .timeline .timeline-text li {
+    margin: 0;
+    font-size: 12px;
+    color: black;
 }
 
 @media (max-width: 767.98px) {
@@ -888,7 +945,12 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
+    margin: 25px;
     padding: 45px 0 15px 0;
+}
+
+#myprojectsHeader{
+    margin: 45px;
 }
 
 .portfolio #portfolio-filter {
@@ -907,10 +969,9 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #414141;
+    background: #000000;
     border: 2px solid transparent;
     border-radius: 5px;
-    box-shadow: inset 0 0 0 50px #6d6875;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -918,10 +979,8 @@ a:focus {
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #6d6875;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #6d6875;
-    border-color: #6d6875;
+    color: #FFFFFF;
+    background: #ff477e;
 }
 
 .portfolio .portfolio-item {
@@ -970,6 +1029,7 @@ a:focus {
     margin: 0 0 0 15px;
     white-space: nowrap;
     overflow: hidden;
+    color: black;
 }
 
 
@@ -979,6 +1039,7 @@ a:focus {
     margin: 0 0 0 15px;
     white-space: nowrap;
     overflow: hidden;
+    color: black;
 }
 
 .portfolio .portfolio-text a.btn {
@@ -990,13 +1051,15 @@ a:focus {
     justify-content: center;
     font-size: 45px;
     font-weight: 100;
+    color: #ffffff;
+    background: #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
 }
 
 .portfolio .portfolio-item:hover a.btn {
-    color: #6d6875;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #6d6875;
-    border-color: #6d6875;
+    color: white;
+    background: #ff477e;
+    border-color: #ff477e;
 }
 
 
@@ -1622,7 +1685,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #414141;
+    color: #ff477e;
 }
 
 .footer .copyright {
