@@ -26,7 +26,7 @@
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">My Portfolio</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -36,10 +36,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <!-- <a href="#service" class="nav-item nav-link">Service</a> -->
                         <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <!-- <a href="#price" class="nav-item nav-link">Price</a> -->
                         <a href="#review" class="nav-item nav-link">Inspiration</a>
                         <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
@@ -66,17 +66,17 @@
                             </div>
                             <div class="hero-btn">
                                 <a class="btn" href="project-docs/CV_Sapna Upadhya.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                                <a class="btn" href="#contact">Contact Me</a>
+                                <a class="btn" id="btn2" href="#contact">Contact Me</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <!-- <div class="col-sm-8 col-md-4 d-none d-md-block">
                         <div id="parallax_mouse_move">
-                            <img src="img/sapna_upadhya.png" alt="Hero Image" width="700">
+                            <img src="img/sapna_bg_1.png" alt="Hero Image" width="700">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+                <!-- <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
                     <div class="container-fluid">
                         <div class="about-content">
                             <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -85,70 +85,100 @@
                             <div class="about-text wow fadeInUp" data-wow-delay="0.2s">
                                 <p>I am a UX designer with a business analysis background focused on creating beautiful experiences through designs. I offer significant experience in understanding business needs, communication with clients/stakeholders, user research, market analysis and project management.
                                     <br><br>My previous experience has taught me the importance of understanding the needs and goals of the business, voice of the customer, thinking from different perspectives and time management. I strongly believe that these skills are the pillars for my UX career and they will help me in solving UX problems through designing for the users with empathy.
-                                    <br><br>I would love to join a team that can share same passion for UX designing and allow me to showcase my user research, information architecture and interface designing skills to design products that can simplify peoples lives.
+                                    <br><br>At the moment I am working as a UX designer intern at a Berlin-based startup and also working as a freelancer on a short-term project. I would love to join a team as a full-time UX designer to showcase my user research, information architecture, and interface designing skills that can solve user interface problems. I am authorized to work in Germany and ready to start immediately.
                                 </p>
                         
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Hero End -->
+
+         <!-- Portfolio Start -->
+         <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <!-- <p>My Portfolio</p> -->
+                    <h2>My Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Web Design</li>
+                            <li data-filter=".filter-2">Mobile Apps</li>
+                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pingu_img.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <span><b>E-Vocab</b> - Vocabulary App</span>
+                                <a class="btn" href="project-docs/Pingu-Evocab.pdf">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/khareedi_img.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <span><b>Khareedhi</b> - Cashback Website</span>
+                                <a class="btn" href="project-docs/Khareedhi.pdf">+</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/jus_pay_v2.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <span><b>JuzPay</b> - Online Payment App</span>
+                                <a class="btn" href="project-docs/Juz Pay_Updated.pdf" >+</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
-
+        <!-- Portfolio End -->
 
         <!-- About Start -->
-        <!-- <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+                            <img src="img/sapna_bg_1.png" alt="Image">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>2 Years Experience</h2>
-                            </div>
+                            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                                <h2>About Me</h2>
+                            </header>
                             <div class="about-text">
-                                <p>
-                                    A UX Designer with Business Analyst background, focused on creating meaningful expiriences through desing.
-                                </p>
+                                    <p>I am a UX designer with a business analysis background focused on creating beautiful experiences through designs. I offer significant experience in understanding business needs, communication with clients/stakeholders, user research, market analysis and project management.
+                                        <br><br>My previous experience has taught me the importance of understanding the needs and goals of the business, voice of the customer, thinking from different perspectives and time management. I strongly believe that these skills are the pillars for my UX career and they will help me in solving UX problems through designing for the users with empathy.
+                                        <br><br>At the moment I am working as a UX designer intern at a Berlin-based startup and also working as a freelancer on a short-term project. I would love to join a team as a full-time UX designer to showcase my user research, information architecture, and interface designing skills that can solve user interface problems. I am authorized to work in Germany and ready to start immediately.
+                                    </p>
                             </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>UX Design</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>UI Design</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Business Analyst</p><p>90%</p>
-                                </div>
-                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                               <div class="skill-name">
-                                    <p>Ux Researcher</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="">Learn More</a>
+                        
                         </div>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
         <!-- About End -->
         
         
@@ -226,9 +256,41 @@
                     <h2>Working Experience</h2>
                 </header>
                 <div class="timeline">
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">Oct 2021 - Present</div>
+                            <h2>UX/UI Designer Intern </h2>
+                            <h4>Climatekuul, Germany</h4>
+                            <p><h5>Kuul.finance (Sustainable cryptocurrency):</h5>
+                                <ul>
+                                    <li> Responsible to conduct competitive analysis, SWOT analysis, and  
+                                        market analysis to understand the market</li>
+                                    <li>Communicate with the investors and crypto enthusiasts to understand 
+                                        their needs and pain points</li>
+                                    <li>Create personas, user journey maps, empathy maps in order to 
+                                        analyze the problem statement</li>
+                                    <li>Partially responsible to work on wireframes, mood board, and the 
+                                        design process of the website.</li>
+                                  </ul>       
+                            </p>
+                            <p><h5>Climatekuul (SaaS product):</h5>
+                                <ul>
+                                    <li> Conducted market research to analyze the competition</li>
+                                    <li> Responsible to conduct user interviews</li>
+                                    <li>Responsible for creating personas and user journey maps based on 
+                                        the requirement</li>
+                                    <li>Created Low to high fidelity wireframe to demonstrate the 
+                                        implementation of API on several platforms such as E-commerce, air  
+                                        travel, and logistics.</li>
+                                    <li> Developed a rapid clickable prototype to provide a first-hand 
+                                            experience with the API.</li>
+                                  </ul>       
+                            </p>
+                        </div>
+                    </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">April 2021 - June 2021</div>
+                            <div class="timeline-date">June 2021 - Sept 2021</div>
                             <h2>Freelance UX Designer</h2>
                             <h4>Khareedhi, Bangalore, India</h4>
                             <p>
@@ -243,10 +305,12 @@
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">Jan 2021 - April 2021</div>
-                            <h2>Student Project - JuzPay (Online Payment App)</h2>
-                            <h4>Career Foundry, Berlin, Germany</h4>
+                            <div class="timeline-date">Jan 2021 - June 2021</div>
+                            <h2>Career Foundry - Bootcamp</h2>
+                            <h4>Career Foundry</h4>
                             <p>
+                                <h5>1. Pingu (Vocabulary learning App) - (Jan 2021 - Feb 2021)</h5>
+                                <h5>2. JuzPay (Online Payment App) - (Mar 2021 - April 2021) </h5>
                                 <ul>
                                     <li>Conducted market research and user research.</li>
                                     <li>Created user personas, journey maps and task flows.</li>
@@ -255,6 +319,7 @@
                                     <li>Presented and published on various platforms.</li>
                                   </ul>       
                             </p>
+        
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
@@ -347,64 +412,6 @@
             </div>
         </div> -->
         <!-- Banner End -->
-
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <!-- <p>My Portfolio</p> -->
-                    <h2>My Projects</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Web Design</li>
-                            <li data-filter=".filter-2">Mobile Apps</li>
-                    
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/jus_pay_1.png" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <span><b>JuzPay</b> - Online Payment App</span>
-                                <a class="btn" href="project-docs/Juz Pay_Updated.pdf" >+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/coming-soon.png" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <span><b>Khareedhi</b> - Cashback Website</span>
-                                <a class="btn" href="img/coming-soon.png" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/coming-soon.png" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <span><b>E-Vocab</b> - Vocabulary App</span>
-                                <a class="btn" href="img/coming-soon.png" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-             
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
         
         
         <!-- Banner Start -->
