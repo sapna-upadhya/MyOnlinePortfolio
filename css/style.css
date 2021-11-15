@@ -1671,6 +1671,8 @@ a:focus {
 
 .footer .footer-social a {
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer .footer-social a i {
